@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyFinancialApp</string>
+    <string name="right">right</string>
+    <string name="center">center</string>
+    <string name="left">left</string>
+</resources>
