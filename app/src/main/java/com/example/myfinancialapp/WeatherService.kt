@@ -12,7 +12,7 @@ import retrofit2.http.Query
 //api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
 interface WeatherService {
-    @GET("data/2.5/weather?")
+    @GET("data/2.5/weather?units=metric")
     fun getCurrentWeatherData(@Query("q") city_name: String, @Query("APPID") app_id: String): Call<WeatherResponse>
     //@GET("data/2.5/weather?")
     //fun getCurrentWeatherData(@Query("lat") lat: String, @Query("lon") lon: String, @Query("APPID") app_id: String): Call<WeatherResponse>
