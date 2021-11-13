@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "252136382976-m050u3vpu3ie7a2tenci4u1474bj4u8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myfinancialapp",
+            "certificate_hash": "80d0b05fa3717a3d85608608a6eb03dc84b1f465"
+          }
+        },
+        {
           "client_id": "252136382976-sjc1non3pkrg42ckjtpds6f97hhskglk.apps.googleusercontent.com",
           "client_type": 3
         }
