@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.navigation.findNavController
 import com.example.myfinancialapp.databinding.FragmentLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -56,6 +57,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         binding.btnSignIn.setOnClickListener {
             signIn()
         }
+
+        binding.googleLocation.setOnClickListener{ v: View ->
+            v.findNavController().navigate(R.id.action_loginFragment_to_mapsFragment)
+        }
+
         return binding.root
     }
 
