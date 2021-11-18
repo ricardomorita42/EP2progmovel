@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/financesFragment"
-        android:name="com.example.myfinancialapp.financesFragment"
+        android:name="com.example.myfinancialapp.FinancesFragment"
         android:label="fragment_finances"
         tools:layout="@layout/fragment_finances" />
     <fragment

@@ -40,7 +40,7 @@ class WeatherFragment : Fragment() {
 
         binding.weatherSendBtn.setOnClickListener {
             city_name = binding.editPlaceName.text.toString()
-            if(city_name != "") {
+            if(city_name.isNotEmpty()) {
                 getCurrentData()
                 binding.editPlaceName.text.clear()
                 binding.editPlaceName.hideKeyboard()

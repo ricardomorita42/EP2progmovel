@@ -1,19 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".financesFragment">
+    tools:context=".FinancesFragment"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:text=" 1. Pick a Goal \n 2. Choose amount to save \n 3. Start Saving!"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/goalTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Finance things here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="15"
+        android:hint="What's your goal?"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/goalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ems="15"
+            android:hint="How much you need for it?"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/setGoalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Set a goal"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/overviewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/newTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="uniform"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center_horizontal"
+            android:text="Title"
+            android:textColor="#2196F3"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/newGoalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="Target Value:"
+            android:textColor="#673AB7"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/determinateBar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:progress="0"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center_horizontal"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/amountToAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center_horizontal"
+            android:ems="15"
+            android:hint="How much are you saving?"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/amountAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Invest"
+            android:visibility="gone" />
+
+
+</LinearLayout>
