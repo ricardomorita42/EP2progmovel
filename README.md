@@ -20,8 +20,11 @@ Neste EP vocês irão criar uma aplicação utilizando a linguagem Kotlin para d
 
     5.4 - A aplicação deve salvar os dados do OpenWeatherMap e permitir visualização dos dados salvos no passado (1 pontos);
 
-    5.5 - A aplicação deve receber notificações utilizando o Firebase (2 pontos); OK (Mas devagar?)
+    5.5 - A aplicação deve receber notificações utilizando o Firebase (2 pontos);
 
     5.6 - A aplicação deve ter uma tela com o Google Maps mostrando a posição atual (2 pontos);
 
     5.7 - Vídeo apresentando a aplicação e o uso da mesma (2 pontos);
+   
+   Link para google drive dos videos: 
+   https://drive.google.com/drive/folders/1VDGiWe0cFaSoMSvMxne8a5W4TcB894-b?usp=sharing
